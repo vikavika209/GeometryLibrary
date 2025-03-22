@@ -6,9 +6,12 @@
     <groupId>com.example</groupId>
     <artifactId>geometry-library</artifactId>
     <version>1.1.0</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>Geometry Library</name>
     <description>Библиотека для работы с геометрическими фигурами</description>
+    <modules>
+        <module>GeometryUtils</module>
+    </modules>
 
 </project>
