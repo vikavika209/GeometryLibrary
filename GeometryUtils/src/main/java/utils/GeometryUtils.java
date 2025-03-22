@@ -20,5 +20,20 @@ public class GeometryUtils {
     public static double m2ToCm2(double m2) {
         return m2 * 10_000;
     }
+
+    /**
+     * Сравнивает площади двух фигур.
+     * @param area1 площадь первой фигуры
+     * @param area2 площадь второй фигуры
+     * @return -1 если первая меньше второй, 1 если первая больше второй, 0 если равны
+     */
+    public static int compareAreas(double area1, double area2) {
+        final double EPSILON = 1e-6;
+
+        if (Math.abs(area1 - area2) < EPSILON) {
+            return 0;
+        }
+        return area1 > area2 ? 1 : -1;
+    }
 }
 

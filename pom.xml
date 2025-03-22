@@ -12,6 +12,7 @@
     <description>Библиотека для работы с геометрическими фигурами</description>
     <modules>
         <module>GeometryUtils</module>
+        <module>ThreeDimensionalShapes</module>
     </modules>
 
 </project>
